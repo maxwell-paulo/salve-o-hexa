@@ -22,7 +22,7 @@ export function update() {
 
 // Enemy first generation
 export function draw() {
-  enemyElement.setAttribute("src", "../../images/maria-chuteira.png");
+  enemyElement.setAttribute("src", "./images/maria-chuteira.png");
   enemyElement.setAttribute("alt", "enemy img");
   enemyElement.classList.add("enemy");
   enemyElement.style.gridRowStart = enemyPosition.y;
