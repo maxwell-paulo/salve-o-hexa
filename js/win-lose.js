@@ -2,6 +2,7 @@ import { life } from "./Life.js";
 import { countdownElement } from "./Timer.js";
 export const losePage = document.getElementById("lose-page");
 const allPage = document.getElementById("all-page");
+
 export function lose() {
   if (life === 0) {
     losePage.style.display = "flex";
