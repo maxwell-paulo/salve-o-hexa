@@ -10,7 +10,9 @@
 
 </head>
 
+
 <body alt="body img">
+  <!-- infos como jogar -->
   <div id="infos">
     <div class="sobre">
       <h4>Controles</h4>
@@ -26,11 +28,15 @@
 
     <div class="sobre">
       <h4>Vidas</h4>
-      <img src="./images/life-icon.png" alt="life icon img" class="icon, life-icon">
+      <img src="./images/life-icon.png" alt="life icon img" class="icon" id="icone">
       <p>Você só possui duas vidas!</p>
     </div>
   </div>
+
+  <!-- botão para começar o jogo -->
   <button id="star-buttom">CLIQUE AQUI E SALVE O HEXA</button>
+
+  <!-- o jogo -->
   <div id="all-page">
     <div id="game-board" alt="game board img"></div>
     <div id="footer">
@@ -43,6 +49,21 @@
     </div>
   </div>
 
+  <!-- página de vitória -->
+  <div id="win-page" class="displayOff">
+    <h1 class="win-lose-page-h1">O HEXA É REALIDADE!!</h1>
+    <img src="./images/win-img.jpeg" alt="win img" class="win-lose-page-img">
+    <a href="./game.html" class="win-lose-page-a">JOGAR NOVAMENTE</a>
+    <h2 class="win-lose-page-h2">Created by: Maxwell Paulo</h2>
+  </div>
+
+  <!-- página de derrota -->
+  <div id="lose-page">
+    <h1 class="win-lose-page-h1">O HEXA ESTÁ AMEAÇADO!!</h1>
+    <img src="./images/lose-img.webp" alt="lose img" class="win-lose-page-img">
+    <a href="./game.html" class="win-lose-page-a">JOGAR NOVAMENTE</a>
+    <h2 class="win-lose-page-h2">Created by: Maxwell Paulo</h2>
+  </div>
 
   <script src="./js/index.js" type="module"></script>
 </body>

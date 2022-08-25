@@ -80,6 +80,7 @@ body {
   color: #009c3b;
   border-radius: 10px;
   box-shadow: 2px 2px #002776;
+  top: 380px;
 }
 
 .life-icon {
@@ -112,6 +113,8 @@ body {
 }
 
 #infos {
+  font-family: "black ops one";
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -122,10 +125,18 @@ body {
   border: 1px solid #002776;
   width: 729px;
   height: 230px;
+  top: 130px;
 }
 
 .icon {
-  width: 50px;
+  width: 60px;
+}
+
+#icone {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #009c3b;
 }
 
 .sobre {
@@ -143,4 +154,65 @@ body {
 
 .sobre p {
   text-align: center;
+}
+
+#win-page {
+  font-family: "black ops one";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 1080px;
+  height: 100%;
+  background-image: url("../images/main-page-bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: none;
+}
+
+#lose-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 1080px;
+  height: 100%;
+  background-image: url("../images/main-page-bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: none;
+}
+
+.win-lose-page-h1 {
+  padding: 10px;
+  margin-top: 20px;
+  color: #ffdf00;
+  font-size: 50px;
+  width: 500px;
+  text-align: center;
+}
+
+.win-lose-page-img {
+  width: 1020px;
+  height: 500px;
+}
+
+.win-lose-page-a {
+  text-decoration: none;
+  font-family: "black ops one";
+  background-color: #ffdf00;
+  border: none;
+  font-size: 40px;
+  padding: 15px;
+  color: #009c3b;
+  border-radius: 10px;
+  box-shadow: 2px 2px #002776;
+  margin-top: 10px;
+}
+
+.win-lose-page-h2 {
+  font-size: 13px;
+  color: #002776;
 }

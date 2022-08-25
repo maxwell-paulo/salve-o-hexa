@@ -4,10 +4,12 @@ let time = startingMinutes * 60;
 export const startButtom = document.getElementById("star-buttom");
 export const countdownElement = document.getElementById("countdown");
 let refreshIntervalId;
+const infos = document.getElementById("infos");
 
 startButtom.addEventListener("click", () => {
   refreshIntervalId = setInterval(updateCowntdown, 1000);
   startButtom.style.display = "none";
+  infos.style.display = "none";
 });
 
 export function updateCowntdown() {
