@@ -1,4 +1,6 @@
-const homeMusic = new Audio("../../audios/musica-inicio.mp3");
-homeMusic.play();
-homeMusic.loop = true;
-console.log("OLAAA");
+<audio src="../../audios/musica-inicio.mp3"></audio>;
+const audioContext = new AudioContext();
+const element = document.querySelector(audio);
+const source = audioContext.createMediaElementSource(element);
+source.connect(audioContext.destination);
+audio.play();

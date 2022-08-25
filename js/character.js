@@ -22,7 +22,7 @@ export function update() {
 
 // character generation
 export function draw() {
-  characterElement.setAttribute("src", "../images/neymar.png");
+  characterElement.setAttribute("src", "./images/neymar.png");
   characterElement.setAttribute("alt", "neymar img");
   characterElement.classList.add("neymar");
 
