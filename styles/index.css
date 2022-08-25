@@ -1,1 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
 
+@font-face {
+  font-family: digital;
+  src: url("../fonts/DS-DIGII.TTF") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "black ops one";
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url("../images/arquibancada.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+}
+
+#main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 800px;
+  height: 700px;
+  background-image: url("../images/main-page-bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  gap: 5px;
+}
+
+h1 {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #ffdf00;
+  color: #009c3b;
+  border: 1px solid #002776;
+}
+
+#itroducao {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 8px;
+  background-color: #009c3b;
+  color: #ffffff;
+  padding: 10px;
+  border: 1px solid #ffdf00;
+  width: 730px;
+}
+
+#texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: #002776;
+  color: #ffffff;
+  padding: 10px;
+  border: 1px solid white;
+  width: 360px;
+  height: 220px;
+}
+
+#njr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  color: #002776;
+  padding: 10px;
+  border: 1px solid #002776;
+  width: 360px;
+  height: 220px;
+}
+
+#njr p {
+  text-align: center;
+}
+
+.personagem {
+  width: 30px;
+}
+
+#enemies {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffdf00;
+  color: #002776;
+  padding: 10px;
+  border: 1px solid #002776;
+  width: 729px;
+  height: 230px;
+}
+
+.inimigo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  width: 243px;
+  height: 210px;
+  background-color: #009c3b;
+  border: #002776 1px solid;
+}
+
+.inimigo p {
+  text-align: center;
+}
+
+#buttom {
+  text-decoration: none;
+  font-family: "black ops one";
+  background-color: #ffdf00;
+  border: none;
+  font-size: 20px;
+  padding: 15px;
+  color: #009c3b;
+  border-radius: 10px;
+  box-shadow: 2px 2px #002776;
+  margin-top: 10px;
+}
+
+h5 {
+  margin-top: 25px;
+  color: #002776;
+  font-size: 10px;
+}

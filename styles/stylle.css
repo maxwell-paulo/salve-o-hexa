@@ -110,3 +110,37 @@ body {
   color: #009c3b;
   border-radius: 10px;
 }
+
+#infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  background-color: #009c3b;
+  color: #002776;
+  padding: 10px;
+  border: 1px solid #002776;
+  width: 729px;
+  height: 230px;
+}
+
+.icon {
+  width: 50px;
+}
+
+.sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  width: 243px;
+  height: 150px;
+  background-color: #ffdf00;
+  border: #002776 1px solid;
+  padding: 10px;
+}
+
+.sobre p {
+  text-align: center;
+}

@@ -62,16 +62,20 @@ function main(currentTime) {
 
   draw();
 
-  if (count > 25) {
+  if (count > 20) {
     gameSpeed = 10;
   }
 
-  if (count > 35) {
+  if (count > 30) {
     gameSpeed = 15;
   }
 
-  if (count > 45) {
+  if (count > 40) {
     gameSpeed = 20;
+  }
+
+  if (count > 50) {
+    gameSpeed = 25;
   }
 
   if (count >= 61) {
@@ -95,7 +99,9 @@ function update() {
 
 function draw() {
   characterDraw();
-  enemyDraw();
+  if (count != 0) {
+    enemyDraw();
+  }
   if (count > 5) {
     newEnemyDraw();
   }

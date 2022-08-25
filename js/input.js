@@ -22,6 +22,7 @@ window.addEventListener("keydown", (e) => {
       break;
   }
 });
+
 startButtom.addEventListener("click", () => {
   inputDirection.x = 1;
   inputDirection.y = 0;
