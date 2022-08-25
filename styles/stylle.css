@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+
+@font-face {
+  font-family: digital;
+  src: url("../fonts/DS-DIGII.TTF") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: roboto;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/arquibancada.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#game-board {
+  background-image: url("../images/campo.jpeg");
+  height: 400px;
+  width: 800px;
+  display: grid;
+  grid-template-columns: repeat(40, 20px);
+  grid-template-rows: repeat(20, 20px);
+}
+
+.neymar {
+  width: 30px;
+  border: 1px solid black;
+}
+
+.enemy {
+  width: 30px;
+}
+
+.new-enemy {
+  width: 30px;
+}
+
+.final-enemy {
+  width: 30px;
+}
+
+#countdown {
+  font-family: digital;
+  color: red;
+  background-color: black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 80px;
+  height: 70px;
+  width: 200px;
+}
+
+#all-page {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#star-buttom {
+  font-family: "black ops one";
+  background-color: #ffdf00;
+  border: none;
+  font-size: 40px;
+  position: absolute;
+  padding: 15px;
+  color: #009c3b;
+  border-radius: 10px;
+  box-shadow: 2px 2px #002776;
+}
+
+.life-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #009c3b;
+}
+
+#footer {
+  justify-content: space-between;
+  display: flex;
+}
+
+#vidas {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#vidas p {
+  font-family: "black ops one";
+  background-color: #ffdf00;
+  border: none;
+  font-size: 25px;
+  padding: 8px;
+  color: #009c3b;
+  border-radius: 10px;
+}
