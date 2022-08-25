@@ -28,7 +28,7 @@ export function update() {
 // Enemy first generation
 export function draw() {
   const finalEnemyElement = document.createElement("img");
-  finalEnemyElement.setAttribute("src", "../../images/mbappe.png");
+  finalEnemyElement.setAttribute("src", "./images/mbappe.png");
   finalEnemyElement.setAttribute("alt", "final enemy element");
   finalEnemyElement.classList.add("new-enemy");
   finalEnemyElement.style.gridRowStart = finalEnemyPosition.y;
