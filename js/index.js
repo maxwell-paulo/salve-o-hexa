@@ -30,6 +30,8 @@ import {
 
 import { lifeCounter, life } from "./Life.js";
 
+import { lose, losePage, win, winPage } from "./win-lose.js";
+
 let gameSpeed = 7;
 
 export let lastTimeRender = 0;
@@ -37,16 +39,7 @@ export let lastTimeRender = 0;
 let gameOver = false;
 
 function main(currentTime) {
-  // Game over condition
-  if (life === 0) {
-    gameOver = true;
-  }
-  if (gameOver) {
-    if (confirm("Você perdeu!")) {
-      window.location.reload();
-    } else {
-      window.requestAnimationFrame(main);
-    }
+  if (losePage.style.display === "flex" || winPage.style.display === "flex") {
     return;
   }
 
@@ -78,15 +71,11 @@ function main(currentTime) {
     gameSpeed = 25;
   }
 
-  if (count >= 61) {
-    if (confirm("Você Ganhou!")) {
-      window.location.reload();
-    } else {
-      window.requestAnimationFrame(main);
-    }
-  }
-
   lifeCounter();
+
+  lose();
+
+  win();
 }
 
 function update() {
