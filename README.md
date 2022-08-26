@@ -5,4 +5,4 @@ Jogo feito durante o módulo 1 do bootcamp da Ironhack de Web Dev full-time São
 para saber mais, [veja essa apresentação](www.google.com)
 para jogar, [clique aqui](https://maxwell-paulo.github.io/porject01-ironhack-wdft-salveohexa/)
 
-<img src="./images/game-intro-img.png" alt="game intro img" width="100%"/>
+<img src="./images/game-intro-img.png" alt="game intro img" width="80%"/>
