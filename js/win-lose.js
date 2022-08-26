@@ -5,6 +5,7 @@ import { gamePageMusic } from "./Game-board.js";
 export const losePage = document.getElementById("lose-page");
 export const allPage = document.getElementById("all-page");
 export const bonusPage = document.getElementById("brumar-page");
+const credits = document.querySelector(".page-h2");
 const losePageMusic = new Audio("../audios/lose-page-music.mp3");
 const winPageMusic = new Audio("../audios/win-game-music.mp3");
 const brumarMusic = new Audio("../audios/BruMar.mp3");
@@ -14,6 +15,7 @@ export function lose() {
     gamePageMusic.pause();
     losePage.style.display = "flex";
     allPage.style.display = "none";
+    credits.style.display = "none";
     losePageMusic.volume = 0.05;
     losePageMusic.play();
     losePageMusic.loop = true;
@@ -27,6 +29,7 @@ export function win() {
     gamePageMusic.pause();
     winPage.style.display = "flex";
     allPage.style.display = "none";
+    credits.style.display = "none";
     winPageMusic.volume = 0.3;
     winPageMusic.play();
     winPageMusic.loop = true;
@@ -42,6 +45,7 @@ export function brumarPage() {
     brumar.style.display = "none";
     startButtom.style.display = "none";
     infos.style.display = "none";
+    credits.style.display = "none";
     brumarMusic.volume = 0.3;
     brumarMusic.play();
     brumarMusic.loop = true;

@@ -277,3 +277,17 @@ body {
   font-size: 13px;
   color: #002776;
 }
+
+.page-h2 {
+  font-family: "black ops one";
+  background-color: #ffdf00;
+  border: none;
+  font-size: 10px;
+  position: absolute;
+  padding: 5px;
+  color: #009c3b;
+  border-radius: 10px;
+  top: 650px;
+  width: 160px;
+  text-align: center;
+}
