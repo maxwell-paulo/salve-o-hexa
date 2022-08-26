@@ -30,7 +30,7 @@ import {
 
 import { lifeCounter, life } from "./Life.js";
 
-import { lose, losePage, win, winPage } from "./win-lose.js";
+import { lose, losePage, win, winPage, brumarPage } from "./win-lose.js";
 
 let gameSpeed = 7;
 
@@ -76,6 +76,8 @@ function main(currentTime) {
   lose();
 
   win();
+
+  brumarPage();
 }
 
 function update() {
