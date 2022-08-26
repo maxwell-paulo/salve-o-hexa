@@ -10,16 +10,13 @@ let enemyDirection = {
   y: 0,
 };
 
-window.addEventListener("keydown", (e) => {
-  switch (e.key) {
-    case "ArrowLeft":
-      inputDirection.x = -1;
-      inputDirection.y = 0;
-      break;
-    case "ArrowRight":
-      inputDirection.x = 1;
-      inputDirection.y = 0;
-      break;
+document.addEventListener("keydown", function (event) {
+  if (event.keyCode === 65 || event.keyCode === 37) {
+    inputDirection.x = -1;
+    inputDirection.y = 0;
+  } else if (event.keyCode === 68 || event.keyCode === 39) {
+    inputDirection.x = 1;
+    inputDirection.y = 0;
   }
 });
 
