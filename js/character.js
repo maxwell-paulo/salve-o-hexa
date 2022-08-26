@@ -2,6 +2,7 @@ import { getInputDirection } from "./input.js";
 import { gameBoard } from "./Game-board.js";
 
 export const characterElement = document.createElement("img");
+characterElement.setAttribute("src", "./images/neymar-right.png");
 
 // Character initial position
 export const characterPosition = { x: 20, y: 16 };
@@ -22,7 +23,14 @@ export function update() {
 
 // character generation
 export function draw() {
-  characterElement.setAttribute("src", "./images/neymar.png");
+  document.addEventListener("keydown", function (event) {
+    if (event.keyCode === 65 || event.keyCode === 37) {
+      characterElement.setAttribute("src", "./images/neymar.png");
+    } else if (event.keyCode === 68 || event.keyCode === 39) {
+      characterElement.setAttribute("src", "./images/neymar-right.png");
+    }
+  });
+
   characterElement.setAttribute("alt", "neymar img");
   characterElement.classList.add("neymar");
 
