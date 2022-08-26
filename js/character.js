@@ -14,9 +14,11 @@ export function update() {
   characterPosition.x += inputDirection.x;
   if (characterPosition.x <= 1) {
     inputDirection.x = 1;
+    characterElement.setAttribute("src", "./images/neymar-right.png");
   }
   if (characterPosition.x > 37) {
     inputDirection.x = -1;
+    characterElement.setAttribute("src", "./images/neymar.png");
   }
   characterPosition.y += inputDirection.y;
 }
