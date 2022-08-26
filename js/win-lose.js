@@ -1,6 +1,6 @@
 import { life } from "./Life.js";
 import { countdownElement } from "./Timer.js";
-import { gamePageMusic } from "./Timer.js";
+import { gamePageMusic } from "./Game-board.js";
 
 export const losePage = document.getElementById("lose-page");
 export const allPage = document.getElementById("all-page");
