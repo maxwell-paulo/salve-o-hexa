@@ -4,8 +4,8 @@ import { gamePageMusic } from "./Game-board.js";
 
 export const losePage = document.getElementById("lose-page");
 export const allPage = document.getElementById("all-page");
-const losePageMusic = new Audio("../../audios/musica-inicio.mp3");
-const winPageMusic = new Audio("../../audios/musica-inicio.mp3");
+const losePageMusic = new Audio("../audios/lose-page-music.mp3");
+const winPageMusic = new Audio("../audios/win-game-music.mp3");
 
 export function lose() {
   if (life === 0) {
@@ -25,7 +25,7 @@ export function win() {
     gamePageMusic.pause();
     winPage.style.display = "flex";
     allPage.style.display = "none";
-    winPageMusic.volume = 0.05;
+    winPageMusic.volume = 0.3;
     winPageMusic.play();
     winPageMusic.loop = true;
     winPageMusic.playbackRate = 1;
