@@ -1,6 +1,5 @@
-const music = new Audio("../audios/musica-inicio.mp3");
-music.volume = 0.05;
+const music = new Audio("../audios/home-page-song.mp3");
+music.volume = 0.15;
 music.play();
 music.loop = true;
 music.playbackRate = 1;
-console.log("OLAAA");

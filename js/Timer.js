@@ -6,12 +6,14 @@ export const countdownElement = document.getElementById("countdown");
 let refreshIntervalId;
 export const infos = document.getElementById("infos");
 export const brumar = document.getElementById("brumar");
+export const dica = document.getElementById("dica");
 
 startButtom.addEventListener("click", () => {
   refreshIntervalId = setInterval(updateCowntdown, 1000);
   startButtom.style.display = "none";
   infos.style.display = "none";
   brumar.style.display = "none";
+  dica.style.display = "none";
 });
 
 export function updateCowntdown() {
